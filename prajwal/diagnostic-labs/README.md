@@ -1,6 +1,6 @@
-# Apollo Diagnostics Clone
+# Mom-labs Diagnostics 
 
-A comprehensive diagnostic lab booking platform inspired by Apollo Diagnostics, built with **HTML, CSS, JavaScript** frontend and **Flask + MySQL** backend using SQLAlchemy ORM.
+A comprehensive diagnostic lab booking platform inspired by Apollo Diagnostics, built with **HTML, CSS, JavaScript** frontend and **Flask + MySQL** .
 
 ## 🚀 Features
 
