@@ -1,6 +1,6 @@
 # Mom-labs Diagnostics 
 
-A comprehensive diagnostic lab booking platform inspired by Apollo Diagnostics, built with **HTML, CSS, JavaScript** frontend and **Flask + MySQL** .
+A comprehensive diagnostic lab booking platform, built with **HTML, CSS, JavaScript** frontend and **Flask + MySQL** .
 
 ## 🚀 Features
 
@@ -21,12 +21,6 @@ A comprehensive diagnostic lab booking platform inspired by Apollo Diagnostics, 
 
 ## 🛠️ Installation & Setup
 
-### 1. Clone/Navigate to Project Directory
-
-```bash
-cd c:/Users/ratho/Desktop/prajwal/apollo-diagnostics-clone
-```
-
 ### 2. Create Virtual Environment (Recommended)
 
 ```bash
@@ -34,7 +28,6 @@ python -m venv venv
 ```
 
 Activate virtual environment:
-- **Windows**: `venv\Scripts\activate`
 - **Linux/Mac**: `source venv/bin/activate`
 
 ### 3. Install Dependencies
@@ -48,15 +41,13 @@ pip install -r requirements.txt
 **Create MySQL Database:**
 
 ```sql
-CREATE DATABASE testdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE testdb 
 ```
 
 **Update `.env` file** (already configured with your credentials):
 
 ```
-DATABASE_URL=mysql+pymysql://root:Virendra@30@localhost/testdb
-SECRET_KEY=your-secret-key-change-this-in-production
-FLASK_ENV=development
+DATABASE_URL=mysql+pymysql://admin:12345678@database-1.cul8akeggpvf.us-east-1.rds.amazonaws.com/testdb
 ```
 
 ### 5. Initialize Database & Seed Data
@@ -67,10 +58,10 @@ python seed_data.py
 
 This will:
 - Create all database tables
-- Populate with 8 categories
-- Add 8 sample diagnostic tests
+- Populate with 4 categories
+- Add 4 sample diagnostic tests
 - Add 4 health packages
-- Add 5 center locations
+- Add 3 center locations
 
 ### 6. Run the Application
 
@@ -173,12 +164,6 @@ The seed script includes:
 - Vitamin D (25-OH)
 - Vitamin B12
 
-**Packages:**
-- Xpert Health Basic (70+ tests)
-- Full Body Checkup (95+ tests)
-- Diabetes Screening Package
-- Heart Health Package
-
 ## 🚀 Usage
 
 1. **Browse Tests**: Navigate to "Book A Test" to see all available tests
@@ -206,18 +191,4 @@ The seed script includes:
 - SMS notifications
 - Doctor consultation booking
 
-## 🤝 Contributing
-
-This is a clone project for educational purposes.
-
-## 📄 License
-
-This project is created for educational purposes.
-
-## 📞 Support
-
-For issues or questions, please check the code comments or Flask documentation.
-
----
-
-**Built with ❤️ using Flask, MySQL, HTML, CSS, and JavaScript**
+**Built with  using Flask, MySQL, HTML, CSS, and JavaScript**
